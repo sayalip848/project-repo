@@ -7,7 +7,7 @@ services:
     volumes:
       - /mnt/war:/usr/local/tomcat/webapps
     logging:
-      driver:
+      driver: awslogs
         options:
           awslogs-group: docker-log
           awslogs-region: ap-south-1
